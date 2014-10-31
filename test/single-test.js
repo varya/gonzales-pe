@@ -1,10 +1,12 @@
 /* Check one specific css string without creating test files.
+ *
  * Print AST and string translated from AST.
  * Just change the first line (`var css`) and run `node test/ast.js`.
  * Make sure to change `syntax` variable too, if needed.
  */
-var css = 'a{go: expression(\n// )\n)}',
-    syntax = 'css',
+//var css = 'a{go: expression(\n// )\n)}',
+var css = '$a:1\n$b:2\n',
+    syntax = 'scss',
     rule = 'stylesheet',
     gonzales = require('./../lib/gonzales'),
     ast = gonzales.srcToAST({src: css, syntax: syntax, rule: rule});
