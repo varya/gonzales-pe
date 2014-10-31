@@ -5,7 +5,7 @@
  * Make sure to change `syntax` variable too, if needed.
  */
 //var css = 'a{go: expression(\n// )\n)}',
-var css = '$a:1\n$b:2\n',
+var css = '$a:1 * $b:2',
     syntax = 'scss',
     rule = 'stylesheet',
     gonzales = require('./../lib/gonzales'),
